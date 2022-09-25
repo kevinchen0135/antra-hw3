@@ -76,6 +76,21 @@ console.log(capFirst(test5));
 // 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. 
 // Example string: 'Web Development Tutorial' 
 // Expected Output: 'Development'
+let test6='Web Development Tutorial'
+function longWord(string){
+let arr=string.split(" ")
+let ans=""
+
+for(i=0;i<arr.length;i++){
+    if(ans.length<arr[i].length){
+        ans=arr[i]
+    }
+}
+
+return ans;
+}
+console.log(longWord(test6))
+
 
 // 7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string. 
 // Note: As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here. 
